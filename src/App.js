@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { addUpTo } from './components/Functions';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//WORKSPACE
+	var t1 = performance.now();
+	addUpTo(10000000);
+	var t2 = performance.now();
+	console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`);
+//WORKSPACE
+	return (
+		<div className="welcome-msg"> Open The Console To See Your Work! </div>
+	);
 }
 
 export default App;
