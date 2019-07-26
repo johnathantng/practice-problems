@@ -5,3 +5,7 @@ export const addUpTo = (n) => {
 	}
 	return total;
 }
+
+export const addUpTo2 = (n) => {
+	return n * (n + 1) / 2;
+}

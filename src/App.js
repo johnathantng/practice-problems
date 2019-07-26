@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { addUpTo } from './components/Functions';
+import { addUpTo, addUpTo2 } from './components/Functions';
 
 import './App.css';
 
 function App() {
 //WORKSPACE
 	var t1 = performance.now();
-	addUpTo(10000000);
+	addUpTo2(10000000);
 	var t2 = performance.now();
 	console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`);
 //WORKSPACE
