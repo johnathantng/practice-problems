@@ -16,8 +16,18 @@ export const logAtLeast5 = (n) => {		//	O(n) will scale proportionally to the va
 	}
 }
 
-export const logAtMost5 = (n) => {
+export const logAtMost5 = (n) => {		//	Big O will be constant == O(1)
 	for (var i = 1; i <= Math.min(5, n); i++) {
 		console.log(i);
 	}
+}
+
+//	SPACE COMPLEXITY
+
+export const sum = (arr) => {		//	not creating a new variable == just means we will have constant space! O(1)
+	let total = 0;
+	for (let i = 0; i < arr.length; i++) {
+		total += arr[i];
+	}
+	return total;
 }
